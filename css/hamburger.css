@@ -1,0 +1,44 @@
+.openBtn {
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.openBtn span {
+  display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #fff;
+  width: 45%;
+}
+
+.openBtn span:nth-of-type(1) {
+  top: 15px;
+}
+.openBtn span:nth-of-type(2) {
+  top: 23px;
+}
+.openBtn span:nth-of-type(3) {
+  top: 31px;
+}
+
+.openBtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+.openBtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.openBtn.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
